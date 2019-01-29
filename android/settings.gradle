@@ -1,0 +1,3 @@
+rootProject.name = 'googleMapDirection'
+
+include ':app'
