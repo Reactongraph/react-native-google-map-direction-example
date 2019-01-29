@@ -3,13 +3,13 @@ Clone project
 git clone <project url>
  
 Go to project directory
-*cd GoogleMapDirection*
+cd GoogleMapDirection
 
 Install the dependencies.
-*npm install*
+npm install
 
 Run proejct on android
-*react-native run-android*
+react-native run-android
 
 Run project on ios
-*react-native run-ios*
+react-native run-ios
