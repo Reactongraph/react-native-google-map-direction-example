@@ -2,12 +2,16 @@
 
 import React, { Component } from 'react';
 import { View } from 'react-native';
-import MapView, { PROVIDER_GOOGLE } from 'react-native-maps';
+import MapView, { PROVIDER_GOOGLE, Polyline } from "react-native-maps";
 import styles from './styles';
 import Header from '../../components/Header'
+import CommonHelper from "../../utils/helper";
+
+const Helper = new CommonHelper();
 
 type Props = {};
-export default class App extends Component<Props> {
+
+export default class Home extends Component<Props> {
     constructor(props) {
         super(props)
         this.state = {
@@ -19,22 +23,9 @@ export default class App extends Component<Props> {
             },
         }
     }
-    componentDidMount() {
-        navigator.geolocation.getCurrentPosition(
-            (position) => {
-                console.log(position);
-                this.setState({
-                    region: {
-                        longitude: position.coords.longitude,
-                        latitude: position.coords.latitude,
-                        latitudeDelta: 0.005,
-                        longitudeDelta: 0.005
-                    }
-                });
-            },
-            (error) => console.log(new Date(), error),
-            { enableHighAccuracy: false, timeout: 10000, maximumAge: 3000 }
-        );
+
+    async componentDidMount() {
+        const currentLocation = await Helper.getPosition();
     }
 
 
