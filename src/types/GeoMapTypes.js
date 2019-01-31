@@ -1,3 +1,4 @@
+// define types
 export type Region = {
     latitude: number,
     longitude: number,

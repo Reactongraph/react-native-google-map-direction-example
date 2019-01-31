@@ -1,12 +1,12 @@
 //@flow
 import React, { Component } from 'react';
-import { View } from "react-native";
+import { View } from 'react-native';
 import styles from './styles';
-import Header from '../../components/Header'
-import CommonHelper from "../../utils/helper";
-import GeoMap from '../../components/GeoMap';
-import Button from '../../components/Button';
-import type { Region } from '../../types/GeoMapTypes';
+import Header from 'src/components/Header'
+import CommonHelper from 'src/utils/helper';
+import GeoMap from 'src/components/GeoMap';
+import Button from 'src/components/Button';
+import type { Region } from 'src/types/GeoMapTypes';
 
 const Helper = new CommonHelper();
 
@@ -16,8 +16,8 @@ type State = {
 
 type Props = {};
 
-const LATITUDE_DELTA = 0.5;
-const LONGITUDE_DELTA = 0.5;
+const LATITUDE_DELTA = 0.005;
+const LONGITUDE_DELTA = 0.005;
 const MAP_DIRECTION_COORDINATES = [];
 let GeoMapDirection=null;
 export default class Home extends Component<Props, State> {
@@ -48,7 +48,7 @@ export default class Home extends Component<Props, State> {
       GeoMapDirection = setInterval( async ()=> {
         const currentLocation = await Helper.getPosition();
         MAP_DIRECTION_COORDINATES.push(currentLocation);
-      }, 3000);
+      }, 5000);
     }
 
     handleEndJourney = () => {

@@ -1,7 +1,7 @@
 //@flow
 import React from 'react';
-import MapView, { PROVIDER_GOOGLE, Polyline, Marker } from "react-native-maps";
-import type { Region } from "../../types/GeoMapTypes";
+import MapView, { PROVIDER_GOOGLE, Polyline, Marker } from 'react-native-maps';
+import type { Region } from 'src/types/GeoMapTypes';
 
 type Props = {
   mapStyle: Object,
