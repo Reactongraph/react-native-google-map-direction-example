@@ -15,4 +15,4 @@
 `react-native run-ios`
 
 ## Run flow
-`npm flow`
+`yarn flow`
