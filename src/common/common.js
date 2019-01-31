@@ -11,4 +11,5 @@ module.exports = {
   // defines colors
   redColor: '#e81f01',
   whiteColor: '#ffffff',
+  blackColor: '#000000',
 };

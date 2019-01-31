@@ -13,4 +13,15 @@ export default StyleSheet.create({
   map: {
     ...StyleSheet.absoluteFillObject,
   },
+  buttonWrapper: {
+    flexDirection: 'row',
+    width: Common.deviceWidth,
+    justifyContent: 'space-around',
+    marginBottom: 40,
+  },
+  buttonView: {
+    borderWidth: 1,
+    borderColor: Common.blackColor,
+    padding: 10,
+  },
 });
