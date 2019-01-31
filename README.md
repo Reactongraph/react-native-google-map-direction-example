@@ -6,10 +6,13 @@
 `cd GoogleMapDirection`
 
 ## Install the dependencies.
-`npm install`
+`yarn`
 
 ## Run proejct on android
 `react-native run-android`
 
 ## Run project on ios
 `react-native run-ios`
+
+## Run flow
+`npm flow`
