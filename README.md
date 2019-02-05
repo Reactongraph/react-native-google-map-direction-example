@@ -1,21 +1,50 @@
-# GoogleMapDirection
-## Clone project
-`git clone <project url>`
- 
-## Go to project directory
-`cd GoogleMapDirection`
+# react-native-google-map-direction-example
 
-## Install the dependencies.
-`yarn`
+This application is example of google map which used to show the google map direction which you have travelled.
 
-## Run proejct on android
-`react-native run-android`
+## Preview
 
-## Run project on ios
+
+## Main technologies used
+
+- [React Native](https://github.com/facebook/react-native)
+
+## Running the project
+
+- Clone this project
+```
+git clone < project-url.git >
+```
+
+- [Install NodeJS](https://nodejs.org/en/) on your computer.
+
+- [Install yarn](https://yarnpkg.com/en/docs/install) on your computer
+> Yarn is a dependency manager built by facebook and google. It is a more efficient and reliable (thanks to yarn.lock) alternative of npm.
+
+- Launch ``` yarn ``` command in a terminal opened in the project folder.
+> This command will look into the *package.json* file and install all the dependencies listed here.
+
+- Install react-native-cli globally on your computer
+```
+yarn global add react-native-cli
+```
+
+### Android steps
+
+- Launch a virtual android device [(through *Android Studio* for instance)](https://developer.android.com/studio/run/managing-avds.html#viewing)
+
+> If you have never installed any android virtual device, [follow those instructions](https://developer.android.com/studio/run/managing-avds.html#createavd)
+
+- Then, run the project in executing on your project folder:
+
+```
+react-native run-android
+```
+- Run project on ios
 `react-native run-ios`
 
-## Run flow
+- Run flow
 `yarn flow`
 
-## Run Test
+- Run Test
 `yarn test`
