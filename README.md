@@ -3,7 +3,7 @@
 This application is example of google map which used to show the google map direction which you have travelled.
 
 ## Preview
-![Alt text](/home/ongraph/preview.JPEG?raw=true "Preview")
+![preview](https://user-images.githubusercontent.com/37612566/52700248-a3716780-2f9d-11e9-939c-69ac1bf0cc84.JPEG)
 
 
 ## Main technologies used
