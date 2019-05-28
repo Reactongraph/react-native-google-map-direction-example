@@ -4,7 +4,7 @@ const deviceHeight = Dimensions.get('window').height;
 const deviceWidth = Dimensions.get('window').width;
 
 module.exports = {
-  // devcie dementions
+  // devcie dimensions
   deviceHeight,
   deviceWidth,
 
