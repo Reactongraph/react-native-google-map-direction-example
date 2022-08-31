@@ -1,11 +1,11 @@
 //@flow
-import React, { Component, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { View } from "react-native";
-import styles from "./styles";
 import Header from "src/components/Header";
 import CommonHelper from "src/utils/helper";
 import GeoMap from "src/components/GeoMap";
 import Button from "src/components/Button";
+import styles from "./styles";
 
 const Helper = new CommonHelper();
 
