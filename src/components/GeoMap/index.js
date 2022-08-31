@@ -1,16 +1,7 @@
-//@flow
-import React from 'react';
-import MapView, { PROVIDER_GOOGLE, Polyline, Marker } from 'react-native-maps';
-import type { Region } from 'src/types/GeoMapTypes';
+import React from "react";
+import MapView, { PROVIDER_GOOGLE, Polyline, Marker } from "react-native-maps";
 
-type Props = {
-  mapStyle: Object,
-  initialRegion: Region,
-  coordinates: Array<Region>,
-  region: Region
-};
-
-const GeoMap = (props: Props) => (
+const GeoMap = (props) => (
   <MapView
     provider={PROVIDER_GOOGLE}
     style={props.mapStyle}
@@ -21,18 +12,16 @@ const GeoMap = (props: Props) => (
     followUserLocation={true}
     showsUserLocation={true}
     loadingEnabled={true}
+    initialZoom={0}
   >
     <Polyline
       coordinates={props.coordinates}
       strokeColor="blue"
       strokeWidth={6}
     />
-    {props.coordinates &&
+    {Array.isArray(props.coordinates) &&
       props.coordinates.map((marker, index) => (
-        <Marker
-          key={index}
-          coordinate={marker}
-        />
+        <Marker key={index} coordinate={marker} />
       ))}
   </MapView>
 );

@@ -1,5 +1,5 @@
-import { StyleSheet } from 'react-native';
-import Common from 'src/common/common';
+import { StyleSheet } from "react-native";
+import Common from "src/common/common";
 
 export default StyleSheet.create({
   container: {
@@ -7,16 +7,17 @@ export default StyleSheet.create({
   },
   mapContainer: {
     flex: 12,
-    justifyContent: 'flex-end',
-    alignItems: 'center',
+    justifyContent: "flex-end",
+    alignItems: "center",
   },
   map: {
     ...StyleSheet.absoluteFillObject,
   },
+
   buttonWrapper: {
-    flexDirection: 'row',
+    flexDirection: "row",
     width: Common.deviceWidth,
-    justifyContent: 'space-around',
+    justifyContent: "space-around",
     marginBottom: 40,
   },
   buttonView: {
