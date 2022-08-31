@@ -1,29 +1,35 @@
 {
-  "name": "googleMapDirection",
+  "name": "Map",
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
     "test": "jest",
-    "flow": "flow"
+    "lint": "eslint ."
   },
   "dependencies": {
-    "react": "16.6.3",
-    "react-native": "0.58.3",
-    "react-native-maps": "^0.23.0"
+    "@react-native-community/masked-view": "^0.1.11",
+    "react": "17.0.2",
+    "react-native": "0.65.0",
+    "react-native-geolocation-service": "^5.3.0-beta.1",
+    "react-native-gesture-handler": "^1.10.3",
+    "react-native-google-places-autocomplete": "^2.4.1",
+    "react-native-maps": "^0.28.0",
+    "react-native-safe-area-context": "^3.3.0",
+    "react-native-vector-icons": "^8.1.0"
   },
   "devDependencies": {
-    "babel-core": "^7.0.0-bridge.0",
-    "babel-jest": "24.0.0",
-    "eslint": "^5.12.1",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-plugin-import": "^2.15.0",
-    "eslint-plugin-jsx-a11y": "^6.2.0",
-    "eslint-plugin-react": "^7.12.4",
-    "flow-bin": "^0.86.0",
-    "jest": "24.0.0",
-    "metro-react-native-babel-preset": "0.51.1",
-    "react-test-renderer": "16.6.3"
+    "@babel/core": "^7.15.0",
+    "@babel/runtime": "^7.15.3",
+    "@react-native-community/eslint-config": "^3.0.0",
+    "babel-jest": "^27.0.6",
+    "eslint": "^7.32.0",
+    "jest": "^27.0.6",
+    "metro-react-native-babel-preset": "^0.66.2",
+    "react-native-codegen": "^0.0.7",
+    "react-test-renderer": "17.0.2"
   },
   "jest": {
     "preset": "react-native"
