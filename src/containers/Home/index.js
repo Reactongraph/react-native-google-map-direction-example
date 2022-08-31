@@ -1,11 +1,11 @@
 //@flow
-import React, {Component, useEffect, useState} from 'react';
-import {View} from 'react-native';
-import styles from './styles';
-import Header from 'src/components/Header';
-import CommonHelper from 'src/utils/helper';
-import GeoMap from 'src/components/GeoMap';
-import Button from 'src/components/Button';
+import React, { Component, useEffect, useState } from "react";
+import { View } from "react-native";
+import styles from "./styles";
+import Header from "src/components/Header";
+import CommonHelper from "src/utils/helper";
+import GeoMap from "src/components/GeoMap";
+import Button from "src/components/Button";
 
 const Helper = new CommonHelper();
 
@@ -25,7 +25,6 @@ const Home = () => {
 
   useEffect(async () => {
     const currentLocation = await Helper.getPosition();
-    console.log('currentLocation===>', currentLocation);
     setRegion({
       latitude: currentLocation.latitude,
       longitude: currentLocation.longitude,
@@ -43,12 +42,11 @@ const Home = () => {
 
   const handleEndJourney = () => {
     clearInterval(GeoMapDirection);
-    setRoute({route: MAP_DIRECTION_COORDINATES});
+    setRoute({ route: MAP_DIRECTION_COORDINATES });
   };
   return (
     <View style={styles.container}>
       <Header title="Google Map Directions" />
-      {console.log('KKKKKKK')}
       <View style={styles.mapContainer}>
         <GeoMap
           mapStyle={styles.map}
