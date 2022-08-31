@@ -12,7 +12,10 @@ export default StyleSheet.create({
   },
   map: {
     ...StyleSheet.absoluteFillObject,
+    // height: '80%',
+    // width: '100%',
   },
+
   buttonWrapper: {
     flexDirection: 'row',
     width: Common.deviceWidth,

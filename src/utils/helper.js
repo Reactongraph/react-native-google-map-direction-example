@@ -10,7 +10,7 @@ class CommonHelper {
       },
       (error) => { reject(error) },
       {
-        // enableHighAccuracy: true,
+         enableHighAccuracy: true,
         timeout: 20000,
         maximumAge: 10000
       }
